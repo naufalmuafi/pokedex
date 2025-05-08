@@ -1,0 +1,8 @@
+services:
+    pokedex:
+        build:
+            context: .
+        ports:
+            - "80:80"
+        volumes:
+            - "./nginx/config:/etc/nginx/conf.d"
